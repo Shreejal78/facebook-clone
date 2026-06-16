@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="/assets/img/facebook.png">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Create new account</title>
+    <link rel="stylesheet"
+    href="./assets/css/create.css">
+    
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/facebook.png"
+            alt="">
+        <h1>Facebook</h1>
+    </header>
+    <hr>
+    <main id="main">
+        <form method="POST" onsubmit="return validate()">
+            <p class="title">Get started
+                on <span style="color:var(--fb-blue)">Facebook</span></p>
+            <p
+                style="text-align:left;margin:0 0 10px 0;">
+                Create an account to
+                connect with friends,
+                family and communities
+                of people who share your
+                interests.</p>
+            <label
+                for="Fname">Name</label>
+            
+            <div class="names">
+                <input type="text"
+                    placeholder="First name"
+                    id="Fname" required
+                    name="Fname">
+                <input type="text"
+                    placeholder="Surname"
+                    id="Lname"
+                    name="Lname" required>
+            </div>
+            <label for="day">Date of
+                birth</label>
+            <div class="DOB">
+                <select name="day"
+                    id="day" required>
+                    <option value=""
+                        selected
+                        disabled>Day
+                    </option>
+                </select>
+                <select name="month"
+                    id="month" required>
+                    <option value=""
+                        selected
+                        disabled>Month
+                    </option>
+                    <option value="1">
+                        January</option>
+                    <option value="2">
+                        February
+                    </option>
+                    <option value="3">
+                        March</option>
+                    <option value="4">
+                        April</option>
+                    <option value="5">
+                        May</option>
+                    <option value="6">
+                        June</option>
+                    <option value="7">
+                        July</option>
+                    <option value="8">
+                        August</option>
+                    <option value="9">
+                        September
+                    </option>
+                    <option value="10">
+                        October</option>
+                    <option value="11">
+                        November
+                    </option>
+                    <option value="12">
+                        December
+                    </option>
+                    
+                </select>
+                <select name="year"
+                    id="year" required>
+                    <option value=""
+                        selected
+                        disabled>Year
+                    </option>
+                    
+                </select>
+            </div>
+            <label
+                for="gender">Gender</label>
+            <div class="gender">
+                <select name="gender"
+                    id="gender" required>
+                    <option value=""
+                        selected
+                        disabled>Gender
+                    </option>
+                    <option value="1">
+                        Male
+                    </option>
+                    <option value="2">
+                        Female
+                    </option>
+                    <option value="3">
+                        Custom
+                    </option>
+                </select>
+            </div>
+            <label for="e-num">
+                Mobile number or email
+                address
+            </label>
+            <input type="text"
+                name="e-num" id="e-num"
+                placeholder="Mobile number or email address" required>
+            <label for="pass">
+                Password
+            </label>
+            <input type="password"
+                name="pass" id="pass"
+                placeholder="Password" required>
+            
+            <input type="submit"
+                name="submit"
+                id="submit"
+                value="Submit"/>
+        </form>
+        <a href="login.html"><button
+                id="login">I already
+                have an
+                account</button></a>
+        
+    </main>
+    <script src="/assets/js/create.js"></script>
+</body>
+
+</html>
