@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/LC.css"> 
 </head>
-<body>
-    <header>
+<body class="login-page"> <header>
         <img src="./assets/img/facebook.png" alt="">
         <h1>Facebook</h1>
     </header>
@@ -17,20 +16,18 @@
         <form >
             <p class="title">Log in to Facebook</p>
             <div class="lbl">
-                <input type="text" id="e-num" class="inp-login" name="e-num">
+                <input type="text" id="e-num" class="inp-login" name="e-num" required>
                 <label for="e-num" class="inp-lbl">Email address or mobile number</label>
             </div>
             <div class="lbl">
-                <input type="password" id="pass" class="inp-login" name="pass">
+                <input type="password" id="pass" class="inp-login" name="pass" required>
                 <label for="pass" class="inp-lbl">Password</label>
             </div>
             <input type="submit" name="login" id="login" value="Log in">
             <p class="forgotPass">Forgotten password?</p>
         </form>
         <a href="create.html" ><button id="create">Create new account</button></a>
-
     </main>
-    <script src="./assets/js/login.js"></script>
-    
+    <script src="./assets/js/LC.js"></script>
 </body>
 </html>
