@@ -19,11 +19,19 @@ body{
   gap:30px;
   border-radius:10px;
   box-shadow:5px 5px 2px #000000,
-  -5px -5px 5px #000000 inset,
-  -5px -5px 30px #D5D5D5;
+  -5px -5px 5px #000000 inset;
   display:flex;
   flex-direction:column;
   align-items:center;
+
+}
+h1{
+  color:#FF9C0C;
+  text-shadow:3px 3px #D98204;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-size:30px;
+  font-style: normal;
 }
 
 .screen{
@@ -32,9 +40,13 @@ body{
   width:250px;
   display: flex;
   align-items:center;
+  text-shadow: 3px 3px #000000;
   color:#CACACA;
-  font-size:40px;
+  font-size:30px;
   overflow:hidden;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
   padding-right:15px;
   letter-spacing:2px;
   justify-content:right;
