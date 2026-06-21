@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #fff;
+  --primary-color: #fff;
   --secondary-color: #EBEBEB;
   --font-color: rgb(107, 105, 105);
-  --hover-color:#D0D0D0;
+  --hover-color: #D0D0D0;
 }
 
 .dark {
@@ -19,44 +19,46 @@ body {
   color: var(--font-color);
 }
 
-.toggleIcon{
-  background:#E6EEF4;    
-  padding:8px 10px;
-  height:12px;
-  width:30px;
-  top:3px;
-  left:55%;
-  border-radius:20px;
-  position:absolute ;
-}
-.toggleIcon::before{
-  content:"";
-  height:20px;
-  width:20px;
-  background:#FF0453;
-  border-radius:50%;
-  position:absolute;
-  top:4px;
-  left:3px;
-  transition:all 250ms ease;
-}
-#theme{
-  position:relative;
+.toggleIcon {
+  background: #E6EEF4;
+  padding: 8px 10px;
+  height: 12px;
+  width: 30px;
+  top: 3px;
+  left: 55%;
+  border-radius: 20px;
+  position: absolute;
 }
 
-.darken{
-  background:#049CFF;
+.toggleIcon::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #FF0453;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  transition: all 250ms ease;
 }
 
-.darken::before{
-  content:"";
-  height:20px;
-  width:20px;
-  background:#FF0453;
-  border-radius:50%;
-  position:absolute;
-  top:4px;
-  left:27px;
+#theme {
+  position: relative;
+}
+
+.darken {
+  background: #049CFF;
+}
+
+.darken::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #FF0453;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 27px;
 }
 
 #profile-menu {
@@ -340,8 +342,8 @@ main {
 }
 
 .inpHR {
-  border: none ;
-  background:var(--secondary-color);
+  border: none;
+  background: var(--secondary-color);
   height: 2px;
 }
 
@@ -507,9 +509,11 @@ main {
   align-items: center;
   background-color: var(--primary-color);
 }
-.themeImg{
-  filter:invert(1) brightness(100);
+
+.themeImg {
+  filter: invert(1) brightness(100);
 }
+
 .post-admin {
   display: flex;
   height: 100%;
@@ -682,12 +686,12 @@ main {
 
 .confirm {
   background-color: #0b66dd;
-  color:white;
+  color: white;
 }
 
 .delete {
   background-color: #a2abb3;
-  color:white;
+  color: white;
 }
 
 .mutual-img-friends {
@@ -714,4 +718,75 @@ main {
   width: 20px;
   border-radius: 50%;
   border: 2px solid var(--secondary-color);
+}
+
+.messageBox {
+  position: fixed;
+  bottom: 0;
+  right: 300px;
+  z-index: 10;
+  height: 350px;
+  width: 320px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.msgTop{
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+}
+.msgProfile{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.msgProfile img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.msgActions{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.msgActions img{
+ height: 35px;
+  width: 35px; 
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  color: var(--font-color);
+}
+.inputBox{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+.inputBox input{
+  background-color: var(--secondary-color);
+  height: 30px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 90%;
+  color: var(--font-color);
+}
+#sendMsg{
+  background:none;
+  border: none;
+}
+
+#sendMsg:hover, .msgActions div{
+  cursor: pointer;
+}
+#sendMsg img{
+  height: 25px;
+  width: 25px;
 }
