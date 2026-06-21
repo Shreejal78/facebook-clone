@@ -1,15 +1,15 @@
 :root {
+    --primary-color: #fff;
+  --secondary-color: #EBEBEB;
+  --font-color: rgb(107, 105, 105);
+  --hover-color:#D6D6D6;
+}
+
+.dark {
   --primary-color: #222;
   --secondary-color: #363535;
   --font-color: rgb(243, 239, 239);
   --hover-color: #626060;
-}
-
-.dark {
-  --primary-color: #fff;
-  --secondary-color: #EBEBEB;
-  --font-color: rgb(107, 105, 105);
-
 }
 
 body {
@@ -235,7 +235,6 @@ main {
   width: 30px;
   padding: 2px;
   border-radius: 50%;
-  background: var(--secondary-color);
 }
 
 .main {
@@ -336,7 +335,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 0 0 125px;
-  background: white;
+  background: var(--primary-color);
   position: relative;
   border-radius: 10px;
 }
@@ -349,7 +348,7 @@ main {
 }
 
 .own-story p {
-  color: var(--hover-color);
+  color: var(--font-color);
   font-size: 16px;
   font-weight: 565;
   text-align: center;
@@ -362,7 +361,7 @@ main {
   bottom: 30px;
   left: 40px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid var(--primary-color);
   background: #276BF5;
   width: 30px;
 }
@@ -377,7 +376,7 @@ main {
   top: 5px;
   left: 14px;
   border-radius: 5px;
-  background: var(--primary-color);
+  background: var(--font-color);
 }
 
 .add-icon::after {
@@ -411,7 +410,7 @@ main {
   margin: 0;
   bottom: 5px;
   left: 10px;
-  color: var(--primary-color);
+  color: #fff;
   font-weight: 600;
   z-index: 10;
 }
@@ -449,7 +448,7 @@ main {
 }
 
 .post {
-  background-color: white;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   height: auto;
@@ -465,9 +464,11 @@ main {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: var(--primary-color);
 }
-
+.themeImg{
+  filter:invert(1) brightness(100);
+}
 .post-admin {
   display: flex;
   height: 100%;
@@ -640,11 +641,12 @@ main {
 
 .confirm {
   background-color: #0b66dd;
-
+  color:white;
 }
 
 .delete {
   background-color: #a2abb3;
+  color:white;
 }
 
 .mutual-img-friends {
