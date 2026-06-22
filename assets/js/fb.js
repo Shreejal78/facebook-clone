@@ -118,3 +118,24 @@ window.addEventListener("load", () => {
         
     }
 })
+
+let friendContacts = document.querySelectorAll(".friendsContact")
+let closeMsg = document.getElementById("closeMsg");
+let msgBox = document.querySelector(".messageBox")
+let pp = document.getElementById("msgProfilePic")
+let msgUsrName = document.getElementById("usrName")
+
+friendContacts.forEach( friend => {
+    friend.addEventListener("click",()=>{
+        msgBox.style.display = "block"
+
+        //Only here for frontEND --- Change in future From DB
+        pp.src = friend.children[0].src
+        msgUsrName.innerText = friend.children[1].innerText
+
+    })
+})
+
+closeMsg.addEventListener("click",()=>{
+    msgBox.style.display = "none"
+})
