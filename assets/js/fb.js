@@ -42,8 +42,9 @@ let theme = localStorage.getItem(
     .setItem("theme", "light")
 let toggleBtn = document.getElementById(
     "theme")
+let toggleIcon = document.querySelector(".toggleIcon")
 toggleBtn.addEventListener("click",
-() => {
+    () => {
         if (localStorage.getItem(
                 "theme") ==
             "light") {
@@ -60,8 +61,8 @@ toggleBtn.addEventListener("click",
                     "dark")
             localStorage.setItem(
                 "theme", "dark")
-            toggleBtn.innerText =
-                'Theme [Dark]'
+            toggleIcon.classList.add(
+                "darken")
         } else {
             toggleImg.forEach(
                 t_img => {
@@ -77,8 +78,8 @@ toggleBtn.addEventListener("click",
             localStorage.setItem(
                 "theme", "light"
             )
-            toggleBtn.innerText =
-                'Theme [Light]'
+            toggleIcon.classList
+                .remove("darken")
             
         }
     })
@@ -98,8 +99,8 @@ window.addEventListener("load", () => {
         document.documentElement
             .classList.add(
                 "dark")
-        toggleBtn.innerText =
-            'Theme [Dark]'
+        toggleIcon.classList.add(
+            "darken")
     } else {
         toggleImg.forEach(
             t_img => {
@@ -112,8 +113,8 @@ window.addEventListener("load", () => {
         document.documentElement
             .classList.remove(
                 "dark")
-        toggleBtn.innerText =
-            'Theme [Light]'
+        toggleIcon.classList
+            .remove("darken")
         
     }
 })
