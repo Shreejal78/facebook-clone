@@ -30,7 +30,7 @@ del.addEventListener("click", () => {
     reqBox.style.display =
         'none'
     document.getElementById(
-            "freindReqHR")
+        "freindReqHR")
         .remove()
 })
 
@@ -38,15 +38,15 @@ del.addEventListener("click", () => {
 let toggleImg = document
     .querySelectorAll(".toggleImg")
 let theme = localStorage.getItem(
-        "theme") || localStorage
-    .setItem("theme", "light")
+    "theme") || localStorage
+        .setItem("theme", "light")
 let toggleBtn = document.getElementById(
     "theme")
 let toggleIcon = document.querySelector(".toggleIcon")
 toggleBtn.addEventListener("click",
     () => {
         if (localStorage.getItem(
-                "theme") ==
+            "theme") ==
             "light") {
             toggleImg.forEach(
                 t_img => {
@@ -80,13 +80,13 @@ toggleBtn.addEventListener("click",
             )
             toggleIcon.classList
                 .remove("darken")
-            
+
         }
     })
 
 window.addEventListener("load", () => {
     if (localStorage.getItem(
-            "theme") ==
+        "theme") ==
         "dark") {
         toggleImg.forEach(
             t_img => {
@@ -115,7 +115,7 @@ window.addEventListener("load", () => {
                 "dark")
         toggleIcon.classList
             .remove("darken")
-        
+
     }
 })
 
@@ -125,8 +125,8 @@ let msgBox = document.querySelector(".messageBox")
 let pp = document.getElementById("msgProfilePic")
 let msgUsrName = document.getElementById("usrName")
 
-friendContacts.forEach( friend => {
-    friend.addEventListener("click",()=>{
+friendContacts.forEach(friend => {
+    friend.addEventListener("click", () => {
         msgBox.style.display = "block"
 
         //Only here for frontEND --- Change in future From DB
@@ -136,6 +136,22 @@ friendContacts.forEach( friend => {
     })
 })
 
-closeMsg.addEventListener("click",()=>{
+closeMsg.addEventListener("click", () => {
     msgBox.style.display = "none"
+})
+
+
+let likeBtns = document.querySelectorAll(".like")
+likeBtns.forEach(likeBtn => {
+    let likeImg = likeBtn.querySelector(".toggleImg")
+        let likeText = likeBtn.querySelector(".like-text")
+    likeBtn.addEventListener("click", (e) => {
+        if(likeText.innerText == "Like"){
+            likeImg.src = "./assets/img/color-like.PNG"
+            likeText.innerText = "Liked"
+        }else{
+            likeImg.src = "./assets/img/like.PNG"
+            likeText.innerText = "Like"
+        }
+    })
 })
