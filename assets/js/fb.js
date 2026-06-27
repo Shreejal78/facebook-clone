@@ -94,6 +94,8 @@ likeBtns.forEach(likeBtn => {
             likeImg.src = "./assets/img/like.PNG";
             likeText.innerText = "Like";
             likeImg.classList.add("themeImg");
+          //test
+          
         }
     });
 });
