@@ -94,8 +94,11 @@ likeBtns.forEach(likeBtn => {
             likeImg.src = "./assets/img/like.PNG";
             likeText.innerText = "Like";
             likeImg.classList.add("themeImg");
-          //test push without repeat auth
+          //test push without repeat auth final check done
           
         }
     });
 });
+console.log('git check')
+
+
