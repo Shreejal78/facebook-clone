@@ -794,5 +794,5 @@ main {
 #commentSection{
   height:200px;
   width: 100%;
-  background:red;
+  background:var(--primary-color);
 }
