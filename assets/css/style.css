@@ -790,9 +790,35 @@ main {
   width: 25px;
 }
 
-
-#commentSection{
-  height:200px;
+#commentSection {
+  height: 200px;
   width: 100%;
-  background:var(--primary-color);
+  background: var(--primary-color);
+}
+#comments {
+  height: 75%;
+}
+.commentText {
+  background: var(--secondary-color);
+  color: var(--font-color);
+  padding: 8px 10px;
+  font-size: 16px;
+  width: 80%;
+  border-radius: 20px;
+}
+.commentInp {
+  display: flex;
+  gap: 10px;
+  padding: 2px 5px;
+  border: none;
+}
+
+#postComment {
+  background: #049cff;
+  color: white;
+	font-weight: 600;
+  border-radius: 20px;
+	padding: 4px 10px;
+  font-size: 12px;
+  border: none;
 }
