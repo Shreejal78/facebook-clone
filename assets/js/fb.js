@@ -99,6 +99,11 @@ likeBtns.forEach(likeBtn => {
         }
     });
 });
-console.log('git check')
 
+let comments = document.querySelectorAll('.comment')
+comments.forEach( com => {
+  com.addEventListener('click',()=>{
+    console.log('come')
+  })
+})
 
