@@ -66,7 +66,8 @@ if (day && mon && yrs) {
 window.addEventListener("DOMContentLoaded", () => {
     updateLabelStates();
 });
-//sometinidf
-function validate() {
-   return true;
-}
+
+
+//Form Validate
+
+console.log(document.getElementById('e-num'))

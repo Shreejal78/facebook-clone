@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="./assets/img/facebook.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="./assets/css/LC.css"> 
+    <link rel="stylesheet" href="./assets/css/LC.css">
 </head>
-<body class="login-page"> <header>
+
+<body class="login-page">
+    <header>
         <img src="./assets/img/facebook.png" alt="">
         <h1>Facebook</h1>
     </header>
     <hr>
     <main>
-        <form >
+        <form method="get" id="loginForm">
             <p class="title">Log in to Facebook</p>
             <div class="lbl">
-                <input type="text" id="e-num" class="inp-login" name="e-num" required>
+                <input type="email" id="e-num" class="inp-login" name="e-num">
                 <label for="e-num" class="inp-lbl">Email address or mobile number</label>
             </div>
             <div class="lbl">
-                <input type="password" id="pass" class="inp-login" name="pass" required>
+                <input type="password" id="pass" class="inp-login" name="pass">
                 <label for="pass" class="inp-lbl">Password</label>
             </div>
             <input type="submit" name="login" id="login" value="Log in">
             <p class="forgotPass">Forgotten password?</p>
         </form>
-        <a href="create.html" ><button id="create">Create new account</button></a>
+        <a href="create.html"><button id="create">Create new account</button></a>
     </main>
     <script src="./assets/js/LC.js"></script>
+
+    <script>
+        let email = document.getElementById('e-num')
+        let pass = document.getElementById('pass')
+        let ep = [email,pass]
+        let form = document.getElementById('loginForm')
+    
+        form.addEventListener('submit', (e) => {
+            email = email.value.trim()
+            pass = pass.value.trim()
+            e.preventDefault()
+            if (email === '') {
+                eError.style.display = 'block'
+
+            }else if(pass === '') {
+                pError.style.display = 'block'
+            }
+
+        })
+        ep.forEach( e => {
+            e.addEventListener('input',()=>{
+
+            })
+        })
+        function showError(msg){
+            return `<p class='errorMsg'>${msg}</p>`
+        }
+    </script>
+
 </body>
+
 </html>
