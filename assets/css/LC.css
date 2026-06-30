@@ -63,6 +63,7 @@ form > p {
 .lbl {
     position: relative;
     width: 100%;
+	margin-bottom: 8px;
 }
 
 .inp-login, select.inp-login {
@@ -181,6 +182,7 @@ select.inp-login:focus ~ .inp-lbl {
 .create-page .gender {
     display: flex;
     gap: 15px;
+
     width: 100%;
 }
 
@@ -207,8 +209,8 @@ select.inp-login:focus ~ .inp-lbl {
 
 .errorMsg{
     color: red;
-    margin: 0 0 10px 10px;
+    margin: 0 0 5px 10px;
     font-size: 12px;
     font-weight: 550;
-    display: none;
+
 }

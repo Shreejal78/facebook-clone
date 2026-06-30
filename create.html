@@ -1,119 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="icon" href="./assets/img/facebook.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="icon" href="./assets/img/facebook.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create new account</title>
-    <link rel="stylesheet" href="./assets/css/LC.css">
-</head>
-<body class="create-page"> 
+    <link rel="stylesheet" href="./assets/css/LC.css" />
+  </head>
+  <body class="create-page">
     <header>
-        <img src="./assets/img/facebook.png" alt="">
-        <h1>Facebook</h1>
+      <img src="./assets/img/facebook.png" alt="" />
+      <h1>Facebook</h1>
     </header>
-    <hr>
+    <hr />
     <main id="main">
-        <form method="POST">
-            <p class="title">Get started on <span style="color:var(--fb-blue)">Facebook</span></p>
-            <p style="text-align:left;margin:0 0 15px 0;">
-                Create an account to connect with friends, family and communities of people who share your interests.
-            </p>
-            
-            <p class="field-title">Name</p>
-            <div class="names">
-                <div class="lbl">
-                    <input type="text" placeholder=" " id="Fname" class="inp-login" required name="Fname">
-                    <label for="Fname" class="inp-lbl">First name</label>
-                    <p id="errorfname"></p>
-                </div>
-                <div class="lbl">
-                    <input type="text" placeholder=" " id="Lname" class="inp-login" name="Lname" required>
-                    <label for="Lname" class="inp-lbl">Surname</label>
-                    <p id="errorlname"></p>
-                </div>
-            </div>
+      <form method="POST" class="LCform">
+        <p class="title">
+          Get started on <span style="color: var(--fb-blue)">Facebook</span>
+        </p>
+        <p style="text-align: left; margin: 0 0 15px 0">
+          Create an account to connect with friends, family and communities of
+          people who share your interests.
+        </p>
 
-            <p class="field-title">Date of birth</p>
-            <div class="DOB">
-                <div class="lbl">
-                    <select name="day" id="day" class="inp-login" required>
-                        <option value="" selected disabled></option>
-                    </select>
-                    <label for="day" class="inp-lbl">Day</label>
-                </div>
-                
-                <div class="lbl">
-                    <select name="month" id="month" class="inp-login" required>
-                        <option value="" selected disabled></option>
-                        <option value="1">January</option>
-                        <option value="2">February</option>
-                        <option value="3">March</option>
-                        <option value="4">April</option>
-                        <option value="5">May</option>
-                        <option value="6">June</option>
-                        <option value="7">July</option>
-                        <option value="8">August</option>
-                        <option value="9">September</option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
-                    </select>
-                    <label for="month" class="inp-lbl">Month</label>
-                </div>
+        <p class="field-title">Name</p>
+        <div class="names">
+          <div class="lbl">
+            <input
+              type="text"
+              placeholder=" "
+              id="Fname"
+              class="inp-login"
+              name="Fname"
+            />
+            <label for="Fname" class="inp-lbl">First name</label>
+          </div>
+          <div class="lbl">
+            <input
+              type="text"
+              placeholder=" "
+              id="Lname"
+              class="inp-login"
+              name="Lname"
+            />
+            <label for="Lname" class="inp-lbl">Surname</label>
+          </div>
+        </div>
 
-                <div class="lbl">
-                    <select name="year" id="year" class="inp-login" required>
-                        <option value="" selected disabled></option>
-                    </select>
-                    <label for="year" class="inp-lbl">Year</label>
-                </div>
-            </div>
+        <p class="field-title">Date of birth</p>
+        <div class="DOB">
+          <div class="lbl">
+            <select name="day" id="day" class="inp-login">
+              <option value="" selected disabled></option>
+            </select>
+            <label for="day" class="inp-lbl">Day</label>
+          </div>
 
-            <p class="field-title">Gender</p>
-            <div class="gender">
-                <div class="lbl">
-                    <select name="gender" id="gender" class="inp-login" required>
-                        <option value="" selected disabled></option> 
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                        <option value="3">Custom</option>
-                    </select>
-                    <label for="gender" class="inp-lbl">Gender</label>
-                </div>
-            </div>
+          <div class="lbl">
+            <select name="month" id="month" class="inp-login">
+              <option value="" selected disabled></option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <label for="month" class="inp-lbl">Month</label>
+          </div>
 
-            <p class="field-title">Mobile numberand email address</p>
-            <div class="lbl">
-                <input type="text" name="e-num" id="e-num" class="inp-login" placeholder=" " required>
-                <label for="e-num" class="inp-lbl">Mobile number or email address</label>
-            </div>
- <p class="field-title">Password</p>
-            <div class="lbl">
-                <input type="password" name="pass" id="pass" class="inp-login" placeholder=" " required>
-                <label for="pass" class="inp-lbl">Password</label>
-            </div>
-            
-            <input type="submit" name="submit" id="submit" value="Submit"/>
-        </form>
-        <a href="login.html"><button id="login">I already have an account</button></a>
+          <div class="lbl">
+            <select name="year" id="year" class="inp-login">
+              <option value="" selected disabled></option>
+            </select>
+            <label for="year" class="inp-lbl">Year</label>
+          </div>
+        </div>
+
+        <p class="field-title">Gender</p>
+        <div class="gender">
+          <div class="lbl">
+            <select name="gender" id="gender" class="inp-login">
+              <option value="" selected disabled></option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Custom</option>
+            </select>
+            <label for="gender" class="inp-lbl">Gender</label>
+          </div>
+        </div>
+
+        <p class="field-title">Email address</p>
+        <div class="lbl">
+          <input
+            type="email"
+            name="e-num"
+            id="e-num"
+            class="inp-login"
+            placeholder=" "
+          />
+          <label for="e-num" class="inp-lbl"
+            >Email address</label
+          >
+        </div>
+        <p class="field-title">Password</p>
+        <div class="lbl">
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            class="inp-login"
+            placeholder=" "
+          />
+          <label for="pass" class="inp-lbl">Password</label>
+        </div>
+
+        <input type="submit" name="submit" id="submit" value="Submit" />
+      </form>
+      <a href="login.html"
+        ><button id="login">I already have an account</button></a
+      >
     </main>
     <script src="./assets/js/LC.js"></script>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let fname = document.getElementById("Fname");
+        let lname = document.getElementById("Lname");
+        let gender = document.getElementById("gender");
+
+        let eList = [email, pass, fname, lname, gender, day, mon, yrs];
+        console.log(eList);
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          eList.forEach(ele => {
+            if (ele.value.trim() == "") {
+              showError(ele.parentElement,`Fill ${ele.parentElement.querySelector('label').innerText}`);
+            }
+          });
+
+          if (pass.value.length <= 8) {
+            showError(
+              pass.parentElement,
+              "Password Mush be greater than 8 letters"
+            );
+          }
+					if (fname.value.trim().length < 3) {
+            showError(
+              fname.parentElement,
+              "First Name should't be less than 3 letters."
+            );
+          }
+
+					if (lname.value.trim().length < 3) {
+            showError(
+              lname.parentElement,
+              "Last Name should't be less than 3 letters."
+            );
+          }
+          if (!/^(?=.*[A-Z])(?=.*[^A-Za-z0-9]).+$/.test(pass.value.trim())) {
+            showError(
+              pass.parentElement,
+              "Password Mush contain at least a Capital & any of [@$!%*?&]"
+            );
+          }
+        });
+
+        eList.forEach(e => {
+          e.addEventListener("input", () => {
+            removeError(e.parentElement);
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
-
-
-
-
-
-<!-- 
-
-
-if firstname last cha vnaey {
-register
-} else {
- login
- }
-
-
--->
