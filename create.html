@@ -133,10 +133,8 @@
         let fname = document.getElementById("Fname");
         let lname = document.getElementById("Lname");
         let gender = document.getElementById("gender");
-
         let eList = [email, pass, fname, lname, gender, day, mon, yrs];
-        console.log(eList);
-        form.addEventListener("submit", e => {
+        form.addEventListener("submit", (e) => {
           e.preventDefault();
           eList.forEach(ele => {
             if (ele.value.trim() == "") {

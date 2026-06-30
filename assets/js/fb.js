@@ -1,26 +1,4 @@
-let profileBtn = document.getElementById("profile-btn");
-let proMenu = document.getElementById("profile-menu");
 
-profileBtn.addEventListener("click", () => {
-    if (proMenu.style.display == "none") {
-        proMenu.style.display = "block";
-    } else {
-        proMenu.style.display = "none";
-    }
-});
-
-let conf = document.getElementById("confirmbtn");
-let del = document.getElementById("deletebtn");
-let reqBox = document.getElementById("reqbox");
-conf.addEventListener("click", () => {
-    conf.innerText = "Friend";
-    del.style.display = "none";
-});
-
-del.addEventListener("click", () => {
-    reqBox.style.display = "none";
-    document.getElementById("freindReqHR").remove();
-});
 
 let toggleImg = document.querySelectorAll(".toggleImg");
 let theme =
@@ -60,6 +38,31 @@ window.addEventListener("load", () => {
         toggleIcon.classList.remove("darken");
     }
 });
+
+let profileBtn = document.getElementById("profile-btn");
+let proMenu = document.getElementById("profile-menu");
+
+profileBtn.addEventListener("click", () => {
+    if (proMenu.style.display == "none") {
+        proMenu.style.display = "block";
+    } else {
+        proMenu.style.display = "none";
+    }
+});
+
+let conf = document.getElementById("confirmbtn");
+let del = document.getElementById("deletebtn");
+let reqBox = document.getElementById("reqbox");
+conf.addEventListener("click", () => {
+    conf.innerText = "Friend";
+    del.style.display = "none";
+});
+
+del.addEventListener("click", () => {
+    reqBox.style.display = "none";
+    document.getElementById("freindReqHR").remove();
+});
+
 
 let friendContacts = document.querySelectorAll(".friendsContact");
 let closeMsg = document.getElementById("closeMsg");
@@ -106,4 +109,7 @@ comments.forEach( com => {
     console.log('come')
   })
 })
+
+
+console.log('sdfads')
 
