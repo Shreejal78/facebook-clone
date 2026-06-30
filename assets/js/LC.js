@@ -83,12 +83,14 @@ function showError(par, msg) {
 		return;
 	} else {
 		par.insertAdjacentHTML("beforeend", `<p class='errorMsg'>${msg}</p>`);
+		par.querySelector('.inp-login').style.borderColor = 'red'
 	}
 }
 
 function removeError(par) {
 	const oldError = par.querySelector(".errorMsg");
 	if (oldError) {
+		par.querySelector('.inp-login').style.borderColor = 'rgb(0, 123, 255)'
 		oldError.remove();
 	}
 }
